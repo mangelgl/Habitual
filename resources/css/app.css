@@ -13,7 +13,7 @@
     --color-primary: #137fec;
     --color-primary-text: #111827;
     --color-secondary: #dfebf6;
-    --color-text-muted: #4b5563;
+    --color-muted: #4b5563;
 }
 
 @font-face {
@@ -52,9 +52,46 @@ section article {
 }
 
 section p {
-    color: var(--color-text-muted);
+    color: var(--color-muted);
 }
 
 footer {
-    color: var(--color-text-muted);
+    color: var(--color-muted);
+}
+
+#registerForm input {
+    width: 100%;
+    border: 1px solid var(--color-gray-300);
+    color: var(--color-primary-text);
+    background-color: #f6f7f8;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#registerForm #inputs input:first-child,
+#registerForm #inputs input:first-child:focus {
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+#registerForm #inputs input:last-child,
+#registerForm #inputs input:last-child:focus {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+#registerForm #inputs input[type="password"]:first-child {
+    border-radius: 0rem;
+}
+
+#registerForm input[type="submit"] {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#registerForm input:focus {
+    outline: none;
+    border-radius: inherit; /* mantiene el redondeado */
 }
