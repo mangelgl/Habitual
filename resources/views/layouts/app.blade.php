@@ -8,6 +8,12 @@
     <title>{{ config('app.name') }}</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    {{-- Fonts --}}
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    
 </head>
 <body class="w-screen font-Inter flex flex-col min-h-screen">
     @include('layouts.navigation')

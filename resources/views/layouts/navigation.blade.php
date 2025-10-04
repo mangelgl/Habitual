@@ -12,6 +12,6 @@
     </nav>
     <div class="flex flex-col md:flex-row md:items-center gap-4 mt-4 md:mt-0">
         <x-nav-link type='button' :href="route('register')" :primary="true">Registrarse</x-nav-link>
-        <x-nav-link type='button' :primary="false">Iniciar sesión</x-nav-link>
+        <x-nav-link type='button' :href="route('login')" :primary="false">Iniciar sesión</x-nav-link>
     </div>
 </header>

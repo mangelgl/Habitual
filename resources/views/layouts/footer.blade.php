@@ -1,4 +1,4 @@
-<footer class="flex justify-between items-center p-4 border-t border-gray-200 text-sm text-muted">
+<footer class="w-full flex justify-between items-center p-4 border-t border-gray-200 text-sm text-muted">
     <div class="flex flex-col md:flex-row gap-4 md:ml-10">
         <a href="">Términos de servicio</a>
         <a href="">Política de privacidad</a>
